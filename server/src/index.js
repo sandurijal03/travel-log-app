@@ -12,13 +12,13 @@ const app = express();
 connectDB();
 
 app.use(express.json());
-app.use(morgan('common'));
-app.use(helmet());
 app.use(
   cors({
-    origin: process.env.CORS_ORIGIN,
+    origin: 'http://localhost:3000',
   }),
 );
+app.use(morgan('common'));
+app.use(helmet());
 
 app.use('/api/logs', logsRouter);
 
