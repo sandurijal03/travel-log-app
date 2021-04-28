@@ -1,0 +1,16 @@
+GET http://localhost:3001/api/logs
+
+###
+POST http://localhost:3001/api/logs
+Content-Type: application/json
+
+{
+  "title":"Hollywood Park Casino",
+  "comments": "Visited the casino on my last visit and the time spent there was life time experiencing.",
+  "latitude": 33.949233,
+  "longitude":-118.338419,
+  "rating": 8,
+  "image":"https://www.thelocationportal.com/wp-content/gallery/hollywood-park-casino/IMG_1619.JPG",
+  "visitDate":"2021-04-28T17:05:15.038Z"
+}
+
